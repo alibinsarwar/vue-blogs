@@ -11,7 +11,7 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="thumb">
-                      <img v-bind:src="blog.image" alt="" style="border-radius: 23px; width: auto; object-fit: fill;">
+                      <img v-bind:src="blog.image" alt="" class="blog-img" style="border-radius: 23px; width: auto; object-fit: fill;">
                     </div>
                   </div>
                 </div>
@@ -155,3 +155,10 @@ export default{
 }
 
 </script>
+<style>
+.blog-img{
+  border-radius: 23px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+}
+</style>
