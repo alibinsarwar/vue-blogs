@@ -4,6 +4,7 @@ import AllBlog from '../views/AllBlog.vue'
 import BlogDetail from '../views/BlogDetail.vue'
 
 const router = createRouter({
+  mode: 'history',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
